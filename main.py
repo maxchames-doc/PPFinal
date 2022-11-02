@@ -4,6 +4,7 @@ from functions import agrega_precios
 from functions import define_interfaz
 
 # Definición de los controles de la barra lateral
+st.sidebar.header('Preferencias')
 level_user = st.sidebar.selectbox(label='Nivel de usuario', options=['Novato', 'Experto'])
 
 # Carga los datos de la aplicación
@@ -15,3 +16,7 @@ data = agrega_precios(vehiculos, precios)
 # Definición del panel central
 st.header('Sistema de apoyo para la elección de vehículos')
 define_interfaz(level_user, data)
+
+# Documentación
+st.sidebar.header('Documentación')
+st.sidebar.write("[Manual de usuario]")

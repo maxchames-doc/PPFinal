@@ -88,7 +88,7 @@ def interfaz_experto(data):
         st.warning('Elija sus preferencias para ver las recomendaciones')
     else:
         st.subheader('Elige el vehículo que deseas explorar')
-        vehiculo = st.radio('Versiones', ponderacion.loc[:,'Version'])
+        vehiculo = st.selectbox('Versiones', ponderacion.loc[:,'Version'])
         if st.button('Explorar'):
             explorer = explora_vehiculo(vehiculo, data)
             col1, col2 = st.columns(2)
