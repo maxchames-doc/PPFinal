@@ -19,4 +19,4 @@ define_interfaz(level_user, data)
 
 # Documentación
 st.sidebar.header('Documentación')
-st.sidebar.write("[Manual de usuario]")
+st.sidebar.write("[Manual de usuario](https://github.com/maxchames-doc/PPFinal/blob/main/docs/USER.md)")
